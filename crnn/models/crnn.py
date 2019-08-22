@@ -1,5 +1,7 @@
 import sys
-sys.path.insert(1, "./crnn")
+import os
+#sys.path.insert(1, "./crnn")
+sys.path.insert(1, os.path.dirname(__file__))
 import torch.nn as nn
 import utils
 

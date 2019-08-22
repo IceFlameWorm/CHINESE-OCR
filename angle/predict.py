@@ -28,8 +28,11 @@ def load():
     sgd = SGD(lr=0.00001, momentum=0.9)
     model.compile(
         optimizer=sgd, loss='categorical_crossentropy', metrics=['accuracy'])
+    # model.load_weights(
+    #     '/Users/xiaofeng/Code/Github/dataset/CHINESE_OCR/angle/modelAngle.h5')
     model.load_weights(
-        '/Users/xiaofeng/Code/Github/dataset/CHINESE_OCR/angle/modelAngle.h5')
+        '/home/aaron/model_files/chinese-ocr/modelAngle.h5')
+
     return model
 
 
